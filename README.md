@@ -2,6 +2,6 @@
 iOS app that allows users to log in by verifying their phone number with Twilio
 
 ## Video Walkthrough
-Recorded on Xcode simulator. Text with verification code receieved on another device.
+Recorded on Xcode simulator. Text with verification code receieved on MacBook.
 
-<img src='http://g.recordit.co/vMrPC4izsB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/0ucAOJW690.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
