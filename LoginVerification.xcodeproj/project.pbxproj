@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		4B9F6D9D259D6FAD0039C10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6D9C259D6FAD0039C10F /* AppDelegate.swift */; };
 		4B9F6D9F259D6FAD0039C10F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6D9E259D6FAD0039C10F /* SceneDelegate.swift */; };
-		4B9F6DA1259D6FAD0039C10F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DA0259D6FAD0039C10F /* ViewController.swift */; };
 		4B9F6DA4259D6FAD0039C10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F6DA2259D6FAD0039C10F /* Main.storyboard */; };
 		4B9F6DA6259D6FB10039C10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F6DA5259D6FB10039C10F /* Assets.xcassets */; };
 		4B9F6DA9259D6FB10039C10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F6DA7259D6FB10039C10F /* LaunchScreen.storyboard */; };
 		4B9F6DB4259D6FB10039C10F /* LoginVerificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DB3259D6FB10039C10F /* LoginVerificationTests.swift */; };
 		4B9F6DBF259D6FB10039C10F /* LoginVerificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DBE259D6FB10039C10F /* LoginVerificationUITests.swift */; };
+		4B9F6DD0259D776A0039C10F /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F6DCF259D776A0039C10F /* Config.plist */; };
+		4B9F6DDB259D7A330039C10F /* StartVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DDA259D7A330039C10F /* StartVerificationViewController.swift */; };
+		4B9F6DE0259D7B040039C10F /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DDF259D7B040039C10F /* VerifyAPI.swift */; };
+		4B9F6DE5259D7CA60039C10F /* CheckVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DE4259D7CA60039C10F /* CheckVerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		4B9F6D99259D6FAC0039C10F /* LoginVerification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginVerification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9F6D9C259D6FAD0039C10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9F6D9E259D6FAD0039C10F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B9F6DA0259D6FAD0039C10F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B9F6DA3259D6FAD0039C10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B9F6DA5259D6FB10039C10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B9F6DA8259D6FB10039C10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		4B9F6DBA259D6FB10039C10F /* LoginVerificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginVerificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9F6DBE259D6FB10039C10F /* LoginVerificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVerificationUITests.swift; sourceTree = "<group>"; };
 		4B9F6DC0259D6FB10039C10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9F6DCF259D776A0039C10F /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		4B9F6DDA259D7A330039C10F /* StartVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVerificationViewController.swift; sourceTree = "<group>"; };
+		4B9F6DDF259D7B040039C10F /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+		4B9F6DE4259D7CA60039C10F /* CheckVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				4B9F6D9C259D6FAD0039C10F /* AppDelegate.swift */,
 				4B9F6D9E259D6FAD0039C10F /* SceneDelegate.swift */,
-				4B9F6DA0259D6FAD0039C10F /* ViewController.swift */,
 				4B9F6DA2259D6FAD0039C10F /* Main.storyboard */,
 				4B9F6DA5259D6FB10039C10F /* Assets.xcassets */,
 				4B9F6DA7259D6FB10039C10F /* LaunchScreen.storyboard */,
 				4B9F6DAA259D6FB10039C10F /* Info.plist */,
+				4B9F6DCF259D776A0039C10F /* Config.plist */,
+				4B9F6DDA259D7A330039C10F /* StartVerificationViewController.swift */,
+				4B9F6DDF259D7B040039C10F /* VerifyAPI.swift */,
+				4B9F6DE4259D7CA60039C10F /* CheckVerificationViewController.swift */,
 			);
 			path = LoginVerification;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B9F6DD0259D776A0039C10F /* Config.plist in Resources */,
 				4B9F6DA9259D6FB10039C10F /* LaunchScreen.storyboard in Resources */,
 				4B9F6DA6259D6FB10039C10F /* Assets.xcassets in Resources */,
 				4B9F6DA4259D6FAD0039C10F /* Main.storyboard in Resources */,
@@ -258,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B9F6DA1259D6FAD0039C10F /* ViewController.swift in Sources */,
+				4B9F6DE5259D7CA60039C10F /* CheckVerificationViewController.swift in Sources */,
 				4B9F6D9D259D6FAD0039C10F /* AppDelegate.swift in Sources */,
+				4B9F6DE0259D7B040039C10F /* VerifyAPI.swift in Sources */,
 				4B9F6D9F259D6FAD0039C10F /* SceneDelegate.swift in Sources */,
+				4B9F6DDB259D7A330039C10F /* StartVerificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
