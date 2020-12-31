@@ -18,6 +18,7 @@
 		4B9F6DDB259D7A330039C10F /* StartVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DDA259D7A330039C10F /* StartVerificationViewController.swift */; };
 		4B9F6DE0259D7B040039C10F /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DDF259D7B040039C10F /* VerifyAPI.swift */; };
 		4B9F6DE5259D7CA60039C10F /* CheckVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DE4259D7CA60039C10F /* CheckVerificationViewController.swift */; };
+		4B9F6DF0259DB1FB0039C10F /* JuixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F6DEF259DB1FA0039C10F /* JuixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4B9F6DDA259D7A330039C10F /* StartVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVerificationViewController.swift; sourceTree = "<group>"; };
 		4B9F6DDF259D7B040039C10F /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		4B9F6DE4259D7CA60039C10F /* CheckVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVerificationViewController.swift; sourceTree = "<group>"; };
+		4B9F6DEF259DB1FA0039C10F /* JuixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuixViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				4B9F6DDA259D7A330039C10F /* StartVerificationViewController.swift */,
 				4B9F6DDF259D7B040039C10F /* VerifyAPI.swift */,
 				4B9F6DE4259D7CA60039C10F /* CheckVerificationViewController.swift */,
+				4B9F6DEF259DB1FA0039C10F /* JuixViewController.swift */,
 			);
 			path = LoginVerification;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				4B9F6DE5259D7CA60039C10F /* CheckVerificationViewController.swift in Sources */,
 				4B9F6D9D259D6FAD0039C10F /* AppDelegate.swift in Sources */,
+				4B9F6DF0259DB1FB0039C10F /* JuixViewController.swift in Sources */,
 				4B9F6DE0259D7B040039C10F /* VerifyAPI.swift in Sources */,
 				4B9F6D9F259D6FAD0039C10F /* SceneDelegate.swift in Sources */,
 				4B9F6DDB259D7A330039C10F /* StartVerificationViewController.swift in Sources */,

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Enter Phone Number-->
+        <!--Log In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StartVerificationViewController" customModule="LoginVerification" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,38 +18,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0O5-dY-vbR">
-                                <rect key="frame" x="25" y="128" width="364" height="114"/>
+                                <rect key="frame" x="60" y="128" width="329" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vy5-ID-Y78">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQX-IN-8yc">
-                                        <rect key="frame" x="0.0" y="42" width="364" height="34"/>
+                                        <rect key="frame" x="0.0" y="42" width="329" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9q-LW-hw2">
-                                        <rect key="frame" x="0.0" y="84" width="364" height="30"/>
-                                        <state key="normal" title="Verify Phone Number"/>
-                                        <connections>
-                                            <action selector="sendVerification" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlI-3q-pNS"/>
-                                            <segue destination="HAF-TB-WiQ" kind="show" id="aUr-8K-3AG"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flagicon" translatesAutoresizingMaskIntoConstraints="NO" id="zc5-uR-1Xk">
+                                <rect key="frame" x="20" y="134" width="31" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phoneicon" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-l0-Obf">
+                                <rect key="frame" x="20" y="173" width="31" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9q-LW-hw2">
+                                <rect key="frame" x="40" y="212" width="334" height="30"/>
+                                <state key="normal" title="Verify Phone Number"/>
+                                <connections>
+                                    <action selector="sendVerification" destination="BYZ-38-t0r" eventType="touchUpInside" id="MlI-3q-pNS"/>
+                                    <segue destination="HAF-TB-WiQ" kind="show" id="aUr-8K-3AG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0O5-dY-vbR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Q05-ii-SHX"/>
+                            <constraint firstItem="K9q-LW-hw2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="886-9v-kj2"/>
+                            <constraint firstItem="K9q-LW-hw2" firstAttribute="top" secondItem="0O5-dY-vbR" secondAttribute="bottom" constant="8" symbolic="YES" id="Iyg-4y-een"/>
+                            <constraint firstItem="0O5-dY-vbR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Q05-ii-SHX"/>
                             <constraint firstItem="0O5-dY-vbR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Z0h-7A-IRh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K9q-LW-hw2" secondAttribute="trailing" constant="40" id="ZuV-8I-tnW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0O5-dY-vbR" secondAttribute="trailing" constant="25" id="bHH-9g-bAP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Enter Phone Number" id="4H9-4N-UDL"/>
+                    <navigationItem key="navigationItem" title="Log In" id="4H9-4N-UDL"/>
                     <connections>
                         <outlet property="countryCodeField" destination="vy5-ID-Y78" id="tXv-cK-5j4"/>
                         <outlet property="phoneNumberField" destination="jQX-IN-8yc" id="SoP-vD-HXy"/>
@@ -59,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="78.348214285714278"/>
         </scene>
-        <!--Check Verification View Controller-->
+        <!--Verification-->
         <scene sceneID="pqn-os-RSz">
             <objects>
                 <viewController id="HAF-TB-WiQ" customClass="CheckVerificationViewController" customModule="LoginVerification" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,25 +79,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4li-FF-rEK">
-                                <rect key="frame" x="25" y="128" width="364" height="100.5"/>
+                                <rect key="frame" x="25" y="128" width="364" height="99.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0n-vM-5ZM">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verification Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0n-vM-5ZM">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYS-wz-DQI">
-                                        <rect key="frame" x="0.0" y="42" width="364" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="42" width="364" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDA-uC-rsc">
-                                        <rect key="frame" x="0.0" y="70.5" width="364" height="30"/>
+                                        <rect key="frame" x="0.0" y="69.5" width="364" height="30"/>
                                         <state key="normal" title="Verify Code"/>
                                         <connections>
                                             <action selector="validateCode" destination="HAF-TB-WiQ" eventType="touchUpInside" id="9Pw-dp-Fxa"/>
-                                            <segue destination="i0T-zN-pEB" kind="presentation" identifier="successSegue" customClass="successSegue" id="WRZ-Ty-EY1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -100,30 +110,50 @@
                             <constraint firstItem="4li-FF-rEK" firstAttribute="leading" secondItem="TUm-4u-Vbo" secondAttribute="leading" constant="25" id="heG-Wj-9o4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Gz8-rF-jGc"/>
+                    <navigationItem key="navigationItem" title="Verification" id="Gz8-rF-jGc"/>
                     <connections>
                         <outlet property="codeField" destination="u0n-vM-5ZM" id="ABR-Gn-qhn"/>
                         <outlet property="errorLabel" destination="IYS-wz-DQI" id="mHA-AG-SdK"/>
+                        <segue destination="i0T-zN-pEB" kind="presentation" identifier="successSegue" id="HOh-5w-TqH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDb-Wl-xxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1836" y="78"/>
         </scene>
-        <!--View Controller-->
+        <!--Juix View Controller-->
         <scene sceneID="Pip-lC-6D3">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="i0T-zN-pEB" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="i0T-zN-pEB" customClass="JuixViewController" customModule="LoginVerification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bzm-dr-wh3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKS-I1-wQj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ky7-oS-6gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TKS-I1-wQj" firstAttribute="top" secondItem="bzm-dr-wh3" secondAttribute="top" id="2Kl-Pk-3M6"/>
+                            <constraint firstItem="TKS-I1-wQj" firstAttribute="trailing" secondItem="ky7-oS-6gu" secondAttribute="trailing" id="pUw-fA-edU"/>
+                            <constraint firstAttribute="bottom" secondItem="TKS-I1-wQj" secondAttribute="bottom" id="tlE-bx-FZL"/>
+                            <constraint firstItem="TKS-I1-wQj" firstAttribute="leading" secondItem="ky7-oS-6gu" secondAttribute="leading" id="z0Z-Rb-QSg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="TKS-I1-wQj" id="RUM-s6-eeH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhu-Wl-pC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="778"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="777.45535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Zv-kc-aCK">
@@ -145,6 +175,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="flagicon" width="512" height="512"/>
+        <image name="phoneicon" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

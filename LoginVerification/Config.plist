@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>serverUrl</key>
-	<string>https://loginverification.herokuapp.com/</string>
+	<string>https://login-phone-verification.herokuapp.com/</string>
 </dict>
 </plist>
