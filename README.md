@@ -1,5 +1,5 @@
 # LoginVerification
-iOS app that allows users to log in by verifying their phone number with Twilio
+iOS app that allows users to log in by verifying their phone number with Twilio and Heroku
 
 ## Video Walkthrough
 Recorded on Xcode simulator. Text with verification code receieved on MacBook.
